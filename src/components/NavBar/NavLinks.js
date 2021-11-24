@@ -1,19 +1,19 @@
-import Link from "@mui/material/Link";
+import { Link } from "gatsby";
 import * as React from "react";
 
 export default function NavLinks(){
     return(
                 <ul>
-                    <Link className="navbar-item" to="/#heroes">
+                    <Link  to="/#hero">
                         Heroes
                     </Link>
-                    <Link className="navbar-item" to="/#features">
+                    <Link to="/#features">
                         Features
                     </Link>
-                    <Link className="navbar-item" to="/#lösungen">
+                    <Link to="/#lösungen">
                         Lösungen
                     </Link>
-                    <Link className="navbar-item" to="/#preise">
+                    <Link to="/#preise">
                         Preise
                     </Link>
                 </ul>
