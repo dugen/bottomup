@@ -18,30 +18,30 @@ function NavBar() {
                 sx={{ borderBottom: (theme) => `1px solid ${theme.palette.divider}` }}
             >
                 <Toolbar sx={{ flexWrap: 'wrap', alignItems:"center"}} >
-                    <Link href="/#" sx={{justifyContent:"left"}}>
+                    <Link href="/#" sx={{justifyContent:"left",textDecoration: 'none' }}>
                         <Icon/>
                     </Link>
                         <Link
                             variant="button"
-                            color="text.primary"
+                            color="text.secondary"
                             href="/#features"
-                            sx={{ my: 1, mx: 4 }}
+                            sx={{ my: 1, mx: 4 ,textDecoration: 'none', textTransform:"none" }}
                         >
                             Features
                         </Link>
                         <Link
                             variant="button"
-                            color="text.primary"
+                            color="text.secondary"
                             href="/#lösungen"
-                            sx={{ my: 1, mx: 4 }}
+                            sx={{ my: 1, mx: 4,textDecoration: 'none', textTransform:"none"  }}
                         >
                             Lösungen
                         </Link>
                         <Link
                             variant="button"
-                            color="text.primary"
+                            color="text.secondary"
                             href="/#preise"
-                            sx={{ my: 1, mx: 4 }}
+                            sx={{ my: 1, mx: 4,textDecoration: 'none' , textTransform:"none" }}
                         >
                             Preise
                         </Link>
@@ -49,7 +49,8 @@ function NavBar() {
                             variant="button"
                             color="text.primary"
                             href="/#unternehmen"
-                            sx={{ my: 1, mx: 4 }}
+                            sx={{ my: 1, mx: 4,textDecoration: 'none', textTransform:"none" }}
+
                         >
                             Unternehmen
                         </Link>
