@@ -4,7 +4,7 @@ export default function Home() {
   return(
   <div>
     <Navbar/>
-    <h2 id="hero" >Hero</h2>
+    <h2>Hero</h2>
     <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
       eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
       ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut

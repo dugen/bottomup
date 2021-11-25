@@ -1,26 +1,65 @@
 import * as React from 'react';
-import Navigation from "./Navigation";
 import AppBar from "@mui/material/AppBar";
 import CssBaseline from "@mui/material/CssBaseline";
 import Toolbar from "@mui/material/Toolbar";
+import GlobalStyles from '@mui/material/GlobalStyles';
+import Link from '@mui/material/Link';
+import Icon from "../../assets/logo.svg"
+import Icon3 from "../../assets/logo3.svg"
 
 function NavBar() {
     return (
-        <div>
+        <React.Fragment>
+            <GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }} />
             <CssBaseline />
             <AppBar
-                style={{ background: '#263238' }}
                 position="static"
-                color="default"
                 elevation={0}
+                sx={{ borderBottom: (theme) => `1px solid ${theme.palette.divider}` }}
             >
-                <Toolbar sx={{ flexWrap: 'wrap' }}>
-            <Navigation/>
+                <Toolbar sx={{ flexWrap: 'wrap', alignItems:"center"}} >
+                    <Link href="/#" sx={{justifyContent:"left"}}>
+                        <Icon/>
+                    </Link>
+                        <Link
+                            variant="button"
+                            color="text.primary"
+                            href="/#features"
+                            sx={{ my: 1, mx: 4 }}
+                        >
+                            Features
+                        </Link>
+                        <Link
+                            variant="button"
+                            color="text.primary"
+                            href="/#lösungen"
+                            sx={{ my: 1, mx: 4 }}
+                        >
+                            Lösungen
+                        </Link>
+                        <Link
+                            variant="button"
+                            color="text.primary"
+                            href="/#preise"
+                            sx={{ my: 1, mx: 4 }}
+                        >
+                            Preise
+                        </Link>
+                        <Link
+                            variant="button"
+                            color="text.primary"
+                            href="/#unternehmen"
+                            sx={{ my: 1, mx: 4 }}
+                        >
+                            Unternehmen
+                        </Link>
+                    <Link href="/#" sx={{paddingTop:1}}>
+                        <Icon3/>
+                    </Link>
                 </Toolbar>
             </AppBar>
-        </div>
+        </React.Fragment>
 );
 }
-
 export default NavBar;
 
