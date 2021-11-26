@@ -12,29 +12,32 @@ import Typography from "@mui/material/Typography";
 
 export default function SocialMedia() {
     return (
-        <Card sx={{minWidth: 275, padding: 5}}>
-                <Typography style={{display: 'flex', justifyContent: 'left', alignItems: 'left'}} variant="h3" component="div" >
+        <div style={{display: 'flex', justifyContent: 'center'}}>
+            <Card sx={{minWidth: 870, padding: 5, maxWidth: 870}}>
+                <Typography style={{display: 'flex', justifyContent: 'left', alignItems: 'left'}} variant="h3"
+                            component="div">
                     Social Media Section
                 </Typography>
-            <CardContent>
-                <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: "20vh"}}>
-                    <Link href="https://facebook.com" sx={{my: 1, mx: 6}}>
-                        <Facebook width="40px" height="40px"/>
-                    </Link>
-                    <Link href="https://twitter.com" sx={{my: 1, mx: 6}}>
-                        <Twitter width="40px" height="40px"/>
-                    </Link>
-                    <Link href="https://instagram.com" sx={{my: 1, mx: 6}}>
-                        <Instagram width="40px" height="40px"/>
-                    </Link>
-                    <Link href="https://vimeo.com" sx={{my: 1, mx: 6}}>
-                        <Vimeo width="40px" height="40px"/>
-                    </Link>
-                    <Link href="https://github.com" sx={{my: 1, mx: 6}}>
-                        <Github width="40px" height="40px"/>
-                    </Link>
-                </div>
-            </CardContent>
-        </Card>
+                <CardContent>
+                    <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: "17vh", paddingTop:7}}>
+                        <Link href="https://facebook.com" sx={{my: 1, mx: 6}}>
+                            <Facebook width="40px" height="40px"/>
+                        </Link>
+                        <Link href="https://twitter.com" sx={{my: 1, mx: 6}}>
+                            <Twitter width="40px" height="40px"/>
+                        </Link>
+                        <Link href="https://instagram.com" sx={{my: 1, mx: 6}}>
+                            <Instagram width="40px" height="40px"/>
+                        </Link>
+                        <Link href="https://vimeo.com" sx={{my: 1, mx: 6}}>
+                            <Vimeo width="40px" height="40px"/>
+                        </Link>
+                        <Link href="https://github.com" sx={{my: 1, mx: 6}}>
+                            <Github width="40px" height="40px"/>
+                        </Link>
+                    </div>
+                </CardContent>
+            </Card>
+        </div>
     )
 }

@@ -9,35 +9,38 @@ const Footer = class extends React.Component {
         return (
             <Toolbar sx={{backgroundColor: "goldenrod", justifyContent: "center"}}>
 
-                <Link href="/#" position="absolute" left={0}>
+                <Link href="/#" sx={{justifyContent:"left"}}>
                     <Icon3 width="80px" />
                 </Link>
-                <Link sx={{ mx: 1, textDecoration: 'none', textTransform: "none"}} href="/#">
+                <Link
+                    color="text.secondary" sx={{ mx: 1, textDecoration: 'none', textTransform: "none"}} href="/#">
                     Home
                 </Link>
 
                 <h3>|</h3>
-                <Link sx={{ mx: 1, textDecoration: 'none', textTransform: "none"}} href="/#features">
+                <Link
+                    color="text.secondary" sx={{ mx: 1, textDecoration: 'none', textTransform: "none"}} href="/#features">
                     Features
                 </Link>
 
                 <h3>|</h3>
-                <Link sx={{ mx: 1, textDecoration: 'none', textTransform: "none"}} href="/#lösungen">
+                <Link
+                    color="text.secondary" sx={{ mx: 1, textDecoration: 'none', textTransform: "none"}} href="/#lösungen">
                     Lösungen
                 </Link>
 
                 <h3>|</h3>
-                <Link sx={{ mx: 1, textDecoration: 'none', textTransform: "none"}} href="/#preise">
+                <Link
+                    color="text.secondary" sx={{ mx: 1, textDecoration: 'none', textTransform: "none"}} href="/#preise">
                     Preise
                 </Link>
-
                 <h3>|</h3>
-                <Link sx={{ mx: 1, textDecoration: 'none', textTransform: "none"}} href="/#unternehmen">
+                <Link
+                    color="text.secondary" sx={{ mx: 1, textDecoration: 'none', textTransform: "none"}} href="/#unternehmen">
                     Unternehmen
                 </Link>
             </Toolbar>
-        )
-            ;
+        );
     }
 };
 
