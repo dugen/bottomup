@@ -52,11 +52,24 @@ export default function CardComponent({markdown}) {
 
             </Card>
         );
+    if ( markdown.node.frontmatter.id===4)
         return (
             <Card sx={{ minWidth: 275, padding: 5 }}>
                 <CardContent>
-                    <Typography variant="h4" component="div">
+                    <Typography style={{display: 'flex',  justifyContent:'left', alignItems:'center'}}   variant="h3" component="div" id={markdown.node.frontmatter.link}>
                         {markdown.node.frontmatter.title}
+                    </Typography>
+                    <Typography style={{columnWidth:"255px ",   justifyContent:'center', alignItems:'center', textAlign:"justify"}} sx={{ mb: 1.5 }} color="text.secondary">
+                        <div dangerouslySetInnerHTML={{__html: markdown.node.html }}/>
+                    </Typography>
+                </CardContent>
+            </Card>
+        );
+        return (
+            <Card sx={{ minWidth: 275, padding: 5 }}>
+                <CardContent>
+                    <Typography style={{display: 'flex',  justifyContent:'left', alignItems:'center'}}   variant="h3" component="div" id={markdown.node.frontmatter.link}>
+                    {markdown.node.frontmatter.title}
                     </Typography>
                     <Typography sx={{ mb: 1.5 , textAlign:"justify"}} color="text.secondary">
                         <div dangerouslySetInnerHTML={{__html: markdown.node.html }}/>

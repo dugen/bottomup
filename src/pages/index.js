@@ -2,7 +2,8 @@ import React from "react"
 import Navbar from "../components/NavBar/NavBar";
 import {graphql} from "gatsby";
 import CardComponent from "../components/CardComponent";
-
+import Footer from "../components/footer";
+import SocialMedia from "../components/socialMedia";
 
 export default function Home({data}) {
   const markdown= data.allMarkdownRemark.edges
@@ -12,6 +13,8 @@ export default function Home({data}) {
     {markdown.map(markdown =>(
           <CardComponent markdown={markdown} key={markdown.node.frontmatter.id}/>
           ))}
+    <SocialMedia/>
+    <Footer/>
   </div>
   )
     }
